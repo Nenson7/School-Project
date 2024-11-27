@@ -1,0 +1,124 @@
+:root {
+  --darkest-blue: #002B59;
+  --dark-blue: #005C99;
+  --medium-blue: #4F97C7;
+  --light-blue: #B7D5E9;
+  --lightest-blue: #caddea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--lightest-blue);
+  color: var(--darkest-blue);
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--darkest-blue);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--lightest-blue);
+
+}
+
+.logo a img {
+  width: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--lightest-blue);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: var(--medium-blue);
+  color: white;
+  border-radius: 4px;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-top: 80px;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--darkest-blue);
+  color: var(--lightest-blue);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer-content a {
+  color: var(--lightest-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: var(--light-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .main-content {
+      padding: 1rem;
+  }
+}

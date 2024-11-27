@@ -1,0 +1,36 @@
+.about-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--light-blue);
+    color: var(--lightest-blue);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    margin-bottom: 1rem;
+    color: var(--darkest-blue);
+    font-weight: bold;
+}
+
+.about-section p {
+    color: white;
+    font-size: 18px;
+}
+
+.team-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-section h2 {
+    margin-bottom: 1rem;
+    color: var(--darkest-blue);
+}
+
+.team-section iframe {
+    width: 100%;
+}

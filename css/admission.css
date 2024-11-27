@@ -1,0 +1,42 @@
+.admission-section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--lightest-blue);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.admission-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.step {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.admission-criteria {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.admission-criteria ul {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    list-style-type: disc;
+}
