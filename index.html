@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEA | Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de962d8192.js" crossorigin="anonymous"></script>
     <style>
         .hero {
-            height: 400px;
+            height: 700px;
             background-position: center;
             background-size: cover;
             display: flex;
@@ -74,6 +77,36 @@
             background-color: white;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
+
+        .video {
+            margin-top: 2rem;
+        }
+        .video iframe {
+            border-radius: 5px;
+        }
+
+        .faq {
+            margin: 2rem 0;
+            padding: 1rem 2rem;
+            background-color: var(--light-blue);
+            border-radius: 8px;
+        }
+
+        .faq details {
+            margin: 2rem 0;
+        }
+
+        .faq summary {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            color: var(--dark-blue);
+        }
+
+        .faq p {
+            margin: 0.5rem 0 0 1rem;
+        }
+
     </style>
 </head>
 <body>
@@ -99,10 +132,9 @@
                 <h1>Welcome to</h1>
                 <h1>Jubilant Elite Academy</h1>                 
                 
-                <p>Nurturing Minds, Building Futures</p>
-
+                <p>At JEA, we are committed to providing a holistic education experience that nurtures the mind, body, and spirit of every student.</p>
                 <a href="/pages/admission.html">
-                    <button>JOIN US</button>
+                    <button>JOIN US NOW</button>
                 </a>
             </div>
         </section>
@@ -121,6 +153,23 @@
                 <p>State-of-the-art infrastructure and learning resources</p>
             </div>
         </section>
+
+        <section class="video">
+            <iframe width="100%" height="700" src="https://www.youtube.com/embed/4m94I4hKJWc" title="JUBILANT ELITE ACADEMY PROMO VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What programs do you offer?</summary>
+                <p>We offer programs from primary education to high school with special focus areas like STEM, arts, and sports.</p>
+            </details>
+            <details>
+                <summary>How can I apply?</summary>
+                <p>You can apply through our online admission form available on the Admission page OR you can click the join us button</p>
+            </details>
+        </section>
+        
     </main>
 
     <footer class="footer">
@@ -137,7 +186,7 @@
             </div>
             <div>
                 <h3>Connect With Us</h3>
-                <p><a href=""><i class="fa-brands fa-facebook"></i></a></p>
+                <p><a href="https://www.facebook.com/@jubilanteliteacademy" target="_blank"><i class="fa-brands fa-facebook"></i></a></p>
                 <p><a href=""></a></p>
                 <p><a href=""></a></p>
             </div>
