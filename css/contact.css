@@ -18,6 +18,10 @@
     margin: 1rem 0;
 }
 
+.contact-section p {
+    color: black;
+}
+
 .contact-section ul li {
     margin-bottom: 0.5rem;
     font-weight: bold;
@@ -43,7 +47,7 @@
 }
 .map-placeholder {
     background-color: var(--lightest-blue);
-    height: 500px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +55,5 @@
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 8px;
-    width: 60%;
     border: 1px dashed var(--medium-blue);
 }

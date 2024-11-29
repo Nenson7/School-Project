@@ -1,7 +1,7 @@
 .about-section {
     margin: 2rem 0;
     padding: 1.5rem;
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
     color: var(--lightest-blue);
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -9,7 +9,7 @@
 
 .about-section h2 {
     margin-bottom: 1rem;
-    color: var(--darkest-blue);
+    color: var(--light-blue);
     font-weight: bold;
 }
 

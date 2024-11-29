@@ -14,17 +14,17 @@
     margin-bottom: 3rem;
 }
 
-.program-card {
+.program-card, .special-program-item {
     background-color: white;
     border-radius: 8px;
     padding: 2rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.program-card::before {
+.program-card::before,.special-program-item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -45,7 +45,7 @@
     background-color: #9C27B0;
 }
 
-.program-card:hover {
+.program-card:hover, .special-program-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -59,6 +59,10 @@
     color: var(--medium-blue);
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
+}
+
+.program-details ul li {
+    list-style-type: square;
 }
 
 .program-details {
@@ -80,4 +84,27 @@
     color: #666;
     position: relative;
     padding-left: 1.5rem;
+}
+
+.special-programs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.special-program-item.sp1::before {
+    background-color: #4CAF50;
+}
+
+.special-program-item.sp2::before {
+    background-color: #2196F3;
+}
+
+.special-program-item.sp3::before {
+    background-color: #9C27B0;
+}
+
+.special-program-item.sp4::before {
+    background-color: #b02727;
 }
