@@ -14,16 +14,25 @@
 }
 
 .about-section p {
-    color: white;
+    color: rgb(204, 204, 204);
     font-size: 18px;
+    line-height: 1.5;
 }
 
+.bold-x {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Team Section */
 .team-section {
     margin-top: 2rem;
     padding: 1.5rem;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .team-section h2 {
@@ -31,6 +40,81 @@
     color: var(--darkest-blue);
 }
 
-.team-section iframe {
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.team-card {
+    background-color: var(--dark-blue);
+    color: var(--lightest-blue);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.staff-img img {
     width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 1rem;
+}
+
+.desc h3 {
+    margin: 0.5rem 0;
+}
+
+.desc .bio {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.social-links a {
+    color: var(--lightest-blue);
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--light-blue);
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+}
+
+
+/* Principal Message Section */
+.message {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.message h2 {
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+.message p {
+    color: var(--darkest-blue);
+    line-height: 1.6;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
 }
