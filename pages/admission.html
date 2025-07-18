@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEA | Admission</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/admission.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="https://kit.fontawesome.com/de962d8192.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,6 +29,7 @@
 
     <main class="main-content">
         <h1 class="page-title">Admission</h1>
+        
         <section class="admission-section">
             <h2>Join Us</h2>
             <p>Thank you for your interest in Jubilant Elite Academy! Below, you will find the steps for the admission process.</p>
@@ -107,9 +110,6 @@
                 </div>
             </form>
         </section>
-        
-        
-        
     </main>
 
     <!-- Modal Structure -->
@@ -127,45 +127,39 @@
             <div>
                 <h3>JEA</h3>
                 <p>Panacea a Nostrum</p>
+                <p style="margin-top: 0.75rem; font-style: italic; font-size: 0.875rem;">Empowering minds, shaping futures</p>
             </div>
             <div>
                 <h3>Quick Links</h3>
                 <p><a href="about.html">About Us</a></p>
                 <p><a href="facilities.html">Facilities</a></p>
                 <p><a href="programs.html">Programs</a></p>
+                <p><a href="contact.html">Contact</a></p>
             </div>
             <div>
                 <h3>Connect With Us</h3>
                 <p><a href="https://www.facebook.com/@jubilanteliteacademy"><i class="fa-brands fa-facebook fb"></i></a></p>
-                <p><a href=""></a></p>
-                <p><a href=""></a></p>
             </div>
-
             <div>
                 <h3>Creators</h3>
                 <p>STEMz</p>
+                <p style="margin-top: 0.75rem; font-size: 0.875rem;">Building tomorrow's education today</p>
             </div>
         </div>
     </footer>
 
     <script>
         document.getElementById('admission-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-        
-            // Show the modal
+            event.preventDefault();
             document.getElementById('confirmation-modal').style.display = 'block';
-            
-            // Blur the background
             document.querySelector('.main-content').style.filter = 'blur(5px)';
         });
         
-        // Close the modal when the close button is clicked
         document.querySelector('.close-button').addEventListener('click', function() {
             document.getElementById('confirmation-modal').style.display = 'none';
             document.querySelector('.main-content').style.filter = 'none';
         });
         
-        // Close the modal when clicking outside of the modal content
         window.addEventListener('click', function(event) {
             if (event.target == document.getElementById('confirmation-modal')) {
                 document.getElementById('confirmation-modal').style.display = 'none';
@@ -173,6 +167,5 @@
             }
         });
     </script>
-        
 </body>
 </html>
