@@ -1,6 +1,6 @@
 # Jubilant Elite Academy Website
 
-**[Live Site](https://your-live-site-link-here)**
+**[Live Site](https://nenson.pages.dev/projects/school-project/)**
 
 ## Features
 - Clean, minimal design using a single CSS file
